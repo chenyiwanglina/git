@@ -53,6 +53,7 @@ public class IndexManager {
             document.add(new LongField("filesize", fileSize, Field.Store.YES));
 
             indexWriter.addDocument(document);
+			
         }
         indexWriter.close();
 
@@ -76,6 +77,8 @@ public class IndexManager {
             document.add(new LongField("filesize", 1000L, Field.Store.YES));
             indexWriter.addDocument(document);
             indexWriter.close();
+			  System.out.println("查询语法："+query);
+			    System.out.println("查询语法："+query);
     }
 
 
